@@ -1,0 +1,84 @@
+Starting diagnostics at 2026-05-24 15:33:29
+
+===== System Information =====
+Operating System: Windows
+Windows Release: 11
+Windows Version: 10.0.26200
+Architecture: ('64bit', 'WindowsPE')
+Machine: AMD64
+Processor: Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
+Total RAM: 23.81 GB
+Available RAM: 9.15 GB
+Free Disk Space: 64.12 GB
+
+===== File System Information =====
+Current Directory: C:\Users\26056\Documents\GitHub\agents\agents
+Write permission: OK
+
+Files in Parent Directory:
+ - agents
+
+===== Git Repository Information =====
+Git Repository Root: C:/Users/26056/Documents/GitHub/agents/agents
+Current Commit: 6b57bdbc718d95e1e5e56aaf9a362fd93365e7a8
+Remote Origin: https://github.com/ed-donner/agents.git
+
+===== Environment File Check =====
+.env file exists at: C:/Users/26056/Documents/GitHub/agents/agents\.env
+OPENAI_API_KEY found in .env file
+
+===== Virtualenv Check =====
+Virtualenv is active:
+Environment Path: C:\Users\26056\Documents\GitHub\agents\agents\.venv
+Environment Name: .venv
+
+Python Environment:
+Python Version: 3.12.13 (main, May 10 2026, 19:35:37) [MSC v.1944 64 bit (AMD64)]
+Python Executable: C:\Users\26056\Documents\GitHub\agents\agents\.venv\Scripts\python.exe
+
+Required Package Versions:
+openai: 1.109.1
+python-dotenv: 1.1.1
+requests: 2.32.5
+gradio: 5.49.1
+openai-agents: 0.3.3
+
+===== Network Connectivity Check =====
+SSL Version: OpenSSL 3.5.6 7 Apr 2026
+WARNING: Failed to connect to https://www.google.com: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000012630F26D20>, 'Connection to www.google.com timed out. (connect timeout=10)'))
+ERROR: Network connectivity check failed: 'gbk' codec can't encode character '\u2713' in position 0: illegal multibyte sequence
+
+===== Environment Variables Check =====
+
+PYTHONPATH is not set, as expected.
+
+Python sys.path:
+ - C:\Users\26056\Documents\GitHub\agents\agents\setup
+ - C:\Users\26056\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.zip
+ - C:\Users\26056\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\DLLs
+ - C:\Users\26056\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib
+ - C:\Users\26056\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none
+ - C:\Users\26056\Documents\GitHub\agents\agents\.venv
+ - C:\Users\26056\Documents\GitHub\agents\agents\.venv\Lib\site-packages
+ - C:\Users\26056\Documents\GitHub\agents\agents\.venv\Lib\site-packages\win32
+ - C:\Users\26056\Documents\GitHub\agents\agents\.venv\Lib\site-packages\win32\lib
+ - C:\Users\26056\Documents\GitHub\agents\agents\.venv\Lib\site-packages\Pythonwin
+ - C:\Users\26056\Documents\GitHub\agents\agents\.venv\Lib\site-packages\setuptools\_vendor
+OPENAI_API_KEY is set after calling load_dotenv()
+WARNING: OPENAI_API_KEY format looks incorrect after calling load_dotenv()
+
+===== Additional Diagnostics =====
+Temp directory is writable: C:\Users\26056\AppData\Local\Temp
+
+===== Warnings Found =====
+The following warnings were detected. They might not prevent the program from running but could cause unexpected behavior:
+- Failed to connect to https://www.google.com: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000012630F26D20>, 'Connection to www.google.com timed out. (connect timeout=10)'))
+- OPENAI_API_KEY format looks incorrect after calling load_dotenv()
+
+===== Errors Found =====
+The following critical issues were detected. Please address them before proceeding:
+- Network connectivity check failed: 'gbk' codec can't encode character '\u2713' in position 0: illegal multibyte sequence
+
+
+Completed diagnostics at 2026-05-24 15:35:22
+

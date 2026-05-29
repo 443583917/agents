@@ -980,8 +980,8 @@ Python >=3.10, <3.14
 
 ### Installation
 ```bash
-uv tool install crewai        # Install CrewAI CLI
-uv tool list                  # Verify installation
+uv tool install crewai-cli    # Install CrewAI CLI
+uv tool list                  # Verify installation (should show crewai-cli)
 crewai create crew my_crew --skip_provider   # Scaffold a new project
 crewai install                # Install project dependencies
 crewai run                    # Execute

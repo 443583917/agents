@@ -1,0 +1,179 @@
+   
+Contact
+ed.donner@gmail.com
+www.linkedin.com/in/eddonner
+(LinkedIn)
+edwarddonner.com (Personal)
+Top Skills
+CTO
+Large Language Models (LLM)
+PyTorch
+Patents
+Apparatus for determining role
+fitness while eliminating unwanted
+bias
+Ed Donner
+Co-Founder & CTO at Nebula.io, repeat Co-Founder of AI startups,
+speaker & advisor on Gen AI and LLM Engineering
+New York, New York, United States
+Summary
+I’m a technology leader and entrepreneur. I'm applying AI to a field
+where it can make a massive impact: helping people discover their
+potential and pursue their reason for being. But at my core, I’m a
+software engineer and a scientist. I learned how to code aged 8 and
+still spend weekends experimenting with Large Language Models
+and writing code (rather badly). If you’d like to join us to show me
+how it’s done.. message me!
+As a work-hobby, I absolutely love giving talks about Gen AI and
+LLMs. I'm the author of a best-selling, top-rated Udemy course
+on LLM Engineering, and I speak at O'Reilly Live Events and
+ODSC workshops. It brings me great joy to help others unlock the
+astonishing power of LLMs.
+I spent most of my career at JPMorgan building software for financial
+markets. I worked in London, Tokyo and New York. I became an MD
+running a global organization of 300. Then I left to start my own AI
+business, untapt, to solve the problem that had plagued me at JPM -
+why is so hard to hire engineers?
+At untapt we worked with GQR, one of the world's fastest growing
+recruitment firms. We collaborated on a patented invention in AI
+and talent. Our skills were perfectly complementary - AI leaders vs
+recruitment leaders - so much so, that we decided to join forces. In
+2020, untapt was acquired by GQR’s parent company and Nebula
+was born.
+I’m now Co-Founder and CTO for Nebula, responsible for software
+engineering and data science.  Our stack is Python/Flask, React,
+Mongo, ElasticSearch, with Kubernetes on GCP. Our 'secret sauce'
+is our use of Gen AI and proprietary LLMs. If any of this sounds
+interesting - we should talk!
+  Page 1 of 5   
+Experience
+Nebula.io
+Co-Founder & CTO
+June 2021 - Present (3 years 10 months)
+New York, New York, United States
+I’m the co-founder and CTO of Nebula.io. We help recruiters source,
+understand, engage and manage talent, using Generative AI / proprietary
+LLMs. Our patented model matches people with roles with greater accuracy
+and speed than previously imaginable — no keywords required.
+Our long term goal is to help people discover their potential and pursue their
+reason for being, motivated by a concept called Ikigai. We help people find
+roles where they will be most fulfilled and successful; as a result, we will raise
+the level of human prosperity. It sounds grandiose, but since 77% of people
+don’t consider themselves inspired or engaged at work, it’s completely within
+our reach.
+Simplified.Travel
+AI Advisor
+February 2025 - Present (2 months)
+Simplified Travel is empowering destinations to deliver unforgettable, data-
+driven journeys at scale.
+I'm giving AI advice to enable highly personalized itinerary solutions for DMOs,
+hotels and tourism organizations, enhancing traveler experiences.
+GQR Global Markets
+Chief Technology Officer
+January 2020 - Present (5 years 3 months)
+New York, New York, United States
+As CTO of parent company Wynden Stark, I'm also responsible for innovation
+initiatives at GQR.
+Wynden Stark
+Chief Technology Officer
+January 2020 - Present (5 years 3 months)
+New York, New York, United States
+With the acquisition of untapt, I transitioned to Chief Technology Officer for the
+Wynden Stark Group, responsible for Data Science and Engineering.
+  Page 2 of 5   
+untapt
+6 years 4 months
+Founder, CTO
+May 2019 - January 2020 (9 months)
+Greater New York City Area
+I founded untapt in October 2013; emerged from stealth in 2014 and went
+into production with first product in 2015. In May 2019, I handed over CEO
+responsibilities to Gareth Moody, previously the Chief Revenue Officer, shifting
+my focus to the technology and product.
+Our core invention is an Artificial Neural Network that uses Deep Learning /
+NLP to understand the fit between candidates and roles.
+Our SaaS products are used in the Recruitment Industry to connect people
+with jobs in a highly scalable way. Our products are also used by Corporations
+for internal and external hiring at high volume. We have strong SaaS metrics
+and trends, and a growing number of bellwether clients.
+Our Deep Learning / NLP models are developed in Python using Google
+TensorFlow. Our tech stack is React / Redux and Angular HTML5 front-end
+with Python / Flask back-end and MongoDB database. We are deployed on
+the Google Cloud Platform using Kubernetes container orchestration.
+Interview at NASDAQ: https://www.pscp.tv/w/1mnxeoNrEvZGX
+Founder, CEO
+October 2013 - May 2019 (5 years 8 months)
+Greater New York City Area
+I founded untapt in October 2013; emerged from stealth in 2014 and went into
+production with first product in 2015.
+Our core invention is an Artificial Neural Network that uses Deep Learning /
+NLP to understand the fit between candidates and roles.
+Our SaaS products are used in the Recruitment Industry to connect people
+with jobs in a highly scalable way. Our products are also used by Corporations
+for internal and external hiring at high volume. We have strong SaaS metrics
+and trends, and a growing number of bellwether clients.
+  Page 3 of 5   
+Our Deep Learning / NLP models are developed in Python using Google
+TensorFlow. Our tech stack is React / Redux and Angular HTML5 front-end
+with Python / Flask back-end and MongoDB database. We are deployed on
+the Google Cloud Platform using Kubernetes container orchestration.
+-- Graduate of FinTech Innovation Lab
+-- American Banker Top 20 Company To Watch
+-- Voted AWS startup most likely to grow exponentially
+-- Forbes contributor
+More at https://www.untapt.com
+Interview at NASDAQ: https://www.pscp.tv/w/1mnxeoNrEvZGX
+In Fast Company: https://www.fastcompany.com/3067339/how-artificial-
+intelligence-is-changing-the-way-companies-hire
+JPMorgan Chase
+11 years 6 months
+Managing Director
+May 2011 - March 2013 (1 year 11 months)
+Head of Technology for the Credit Portfolio Group and Hedge Fund Credit in
+the JPMorgan Investment Bank.
+Led a team of 300 Java and Python software developers across NY, Houston,
+London, Glasgow and India. Responsible for counterparty exposure, CVA
+and risk management platforms, including simulation engines in Python that
+calculate counterparty credit risk for the firm's Derivatives portfolio.
+Managed the electronic trading limits initiative, and the Credit Stress program
+which calculates risk information under stressed conditions. Jointly responsible
+for Market Data and batch infrastructure across Risk.
+Executive Director
+January 2007 - May 2011 (4 years 5 months)
+From Jan 2008:
+Chief Business Technologist for the Credit Portfolio Group and Hedge Fund
+Credit in the JPMorgan Investment Bank, building Java and Python solutions
+and managing a team of full stack developers.
+2007:
+  Page 4 of 5   
+Responsible for Credit Risk Limits Monitoring infrastructure for Derivatives and
+Cash Securities, developed in Java / Javascript / HTML.
+VP
+July 2004 - December 2006 (2 years 6 months)
+Managed Collateral, Netting and Legal documentation technology across
+Derivatives, Securities and Traditional Credit Products, including Java, Oracle,
+SQL based platforms
+VP
+October 2001 - June 2004 (2 years 9 months)
+Full stack developer, then manager for Java cross-product risk management
+system in Credit Markets Technology
+Cygnifi
+Project Leader
+January 2000 - September 2001 (1 year 9 months)
+Full stack developer and engineering lead, developing Java and Javascript
+platform to risk manage Interest Rate Derivatives at this FInTech startup and
+JPMorgan spin-off.
+JPMorgan
+Associate
+July 1997 - December 1999 (2 years 6 months)
+Full stack developer for Exotic and Flow Interest Rate Derivatives risk
+management system in London, New York and Tokyo
+IBM
+Software Developer
+August 1995 - June 1997 (1 year 11 months)
+Java and Smalltalk developer with IBM Global Services; taught IBM classes on
+Smalltalk and Object Technology in the UK and around Europe
+Education
+University of Oxford
+Physics  · (1992 - 1995)
+  Page 5 of 5

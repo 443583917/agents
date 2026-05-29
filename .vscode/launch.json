@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试 3_lab3.py (Gradio)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/1_foundations/me/3_lab3.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/1_foundations/me",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "justMyCode": false
+        }
+    ]
+}
