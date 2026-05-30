@@ -7,3 +7,42 @@ coder:
   backstory: >
     You're a seasoned python developer with a knack for writing clean, efficient code.
   llm: gpt-4o-mini
+# 实际工作的agent的配置说明都是在这个文件中定义的
+  # ── 必填 ──────────────────────────────────────────
+ # role: >
+ #   角色名称，描述 Agent 的身份（如 Python Developer）
+ # goal: >
+ #   目标任务，Agent 要达成的目标，支持 {变量名} 模板
+ # backstory: >
+ #   背景故事，影响 Agent 的语气、思维方式和行为风格
+# ============================================================
+  # ── 模型相关 ──────────────────────────────────────
+  # llm: openai/gpt-4o                  # 模型名，代码中 llm= 会覆盖此项
+  # max_tokens: 4096                     # 输出 token 上限
+  # max_rpm: 60                          # 每分钟最大 API 请求数
+
+  # ── 执行控制 ──────────────────────────────────────
+  # verbose: true                        # 打印详细日志，默认 true
+  # max_iter: 25                         # 最大迭代次数，默认 25
+  # max_execution_time: 60               # 单任务最长执行时间（秒）
+  # max_retry_limit: 3                   # 失败后最大重试次数，默认 2
+  # allow_delegation: false              # 是否允许委派任务给其他 Agent
+  # allow_code_execution: true           # [已弃用] 是否允许执行代码
+  # code_execution_mode: unsafe          # safe=Docker 隔离 / unsafe=本地执行
+
+  # ── 智能行为 ──────────────────────────────────────
+  # planning: true                       # 执行前先生成计划
+  # cache: true                          # 缓存工具调用结果，默认 true
+  # respect_context_window: true         # 超出上下文自动摘要，默认 true
+  # use_system_prompt: true              # 使用系统提示词，默认 true
+  # inject_date: true                    # 自动注入当前日期到任务中
+  # date_format: "%Y-%m-%d"              # 日期格式，配合 inject_date 使用
+
+  # ── 提示词模板（高级） ──────────────────────────────
+  # system_template: "You are a helpful assistant..."
+  # prompt_template: "Task: {task_description}"
+  # response_template: "Answer: {response}"
+
+  # ── 输出校验 ──────────────────────────────────────
+  # guardrail: "输出必须包含有效的 Python 代码"
+  # guardrail_max_retries: 3             # 校验失败重试次数，默认 3
