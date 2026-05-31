@@ -1,0 +1,84 @@
+# ============================================================
+# agents.yaml — Agent 配置文件
+# 每个顶级 key 定义一个 Agent，key 名 = crew.py 中 config 引用的名称
+# YAML 多行字符串 > 语法：换行会变成空格，末尾自动加一个换行
+# 模板变量 {topic}、{current_year} 由 main.py 的 inputs 字典自动替换
+# ============================================================
+
+researcher:
+  # ── 角色 ──────────────────────────────────────────
+  role: >
+    {topic} Senior Data Researcher
+  # ── 目标 ──────────────────────────────────────────
+  goal: >
+    Uncover cutting-edge developments in {topic}
+  # ── 背景故事 ──────────────────────────────────────
+  backstory: >
+    You're a seasoned researcher with a knack for uncovering the latest
+    developments in {topic}. Known for your ability to find the most relevant
+    information and present it in a clear and concise manner.
+
+reporting_analyst:
+  # ── 角色 ──────────────────────────────────────────
+  role: >
+    {topic} Reporting Analyst
+  # ── 目标 ──────────────────────────────────────────
+  goal: >
+    Create detailed reports based on {topic} data analysis and research findings
+  # ── 背景故事 ──────────────────────────────────────
+  backstory: >
+    You're a meticulous analyst with a keen eye for detail. You're known for
+    your ability to turn complex data into clear and concise reports, making
+    it easy for others to understand and act on the information you provide.
+
+# ============================================================
+# Agent 完整可配置参数参考（注释形式，供扩展时查阅）
+# ============================================================
+
+  # ── 必填 ──────────────────────────────────────────
+  # role: >
+  #   角色名称，描述 Agent 的身份（如 Senior Data Researcher）
+  #   决定了 Agent 的"人设"和说话风格
+  # goal: >
+  #   目标任务，Agent 要达成的最终目标
+  #   支持 {变量名} 模板，运行时自动替换
+  # backstory: >
+  #   背景故事，影响 Agent 的语气、思维方式和行为风格
+  #   可以写详细一些，帮助 Agent 更好地理解自己的角色
+
+# ── 模型相关 ──────────────────────────────────────
+  # llm: openai/gpt-4o                  # 模型名，crew.py 中 llm= 会覆盖此项
+  #                                      # 支持任何 OpenAI 兼容接口的模型
+  # max_tokens: 4096                     # 输出 token 上限，防止回复过长
+  # max_rpm: 60                          # 每分钟最大 API 请求数，避免限流
+
+# ── 执行控制 ──────────────────────────────────────
+  # verbose: true                        # 打印 Agent 思考过程和执行日志，默认 true
+  # max_iter: 25                         # Agent 最大迭代次数（思考-行动循环），默认 25
+  # max_execution_time: 60               # 单任务最长执行时间（秒），超时终止
+  # max_retry_limit: 3                   # 任务失败后最大重试次数，默认 2
+  # allow_delegation: false              # 是否允许此 Agent 把任务委派给其他 Agent
+  # allow_code_execution: false          # 是否允许 Agent 编写并执行代码
+  # code_execution_mode: unsafe          # 代码执行方式：safe=Docker 隔离 / unsafe=本地
+
+# ── 智能行为 ──────────────────────────────────────
+  # planning: true                       # 执行前先生成计划再行动（类似思维链）
+  # cache: true                          # 缓存工具调用结果避免重复请求，默认 true
+  # respect_context_window: true         # 超出上下文窗口时自动摘要压缩，默认 true
+  # use_system_prompt: true              # 使用系统提示词层，默认 true
+  # inject_date: true                    # 自动将当前日期注入到任务描述中
+  # date_format: "%Y-%m-%d"              # 日期格式，配合 inject_date 使用
+
+# ── 提示词模板（高级定制） ──────────────────────────
+  # system_template: "You are a helpful assistant..."
+  #   → 自定义系统提示词，覆盖默认
+  # prompt_template: "Task: {task_description}"
+  #   → 自定义任务提示词模板
+  # response_template: "Answer: {response}"
+  #   → 自定义回复模板
+
+# ── 输出校验 ──────────────────────────────────────
+  # guardrail: "输出必须包含有效的 JSON 数据"
+  #   → 护栏：对 Agent 输出进行规则校验
+  # guardrail_max_retries: 3
+  #   → 校验失败时的最大重试次数，默认 3

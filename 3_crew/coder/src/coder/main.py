@@ -31,6 +31,7 @@ def run():
     print(result.raw)
 
 # 训练和测试函数，供 CLI 命令调用
+# 多轮训练，保存经验数据
 def train():
     """
     Train the crew for a given number of iterations.
@@ -44,7 +45,7 @@ def train():
 
     except Exception as e:
         raise Exception(f"An error occurred while training the crew: {e}")
-
+# 	按 task_id 回放历史任务
 def replay():
     """
     Replay the crew execution from a specific task.
@@ -54,7 +55,7 @@ def replay():
 
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
-
+# 用评估模型测试 Crew 质量
 def test():
     """
     Test the crew execution and returns the results.

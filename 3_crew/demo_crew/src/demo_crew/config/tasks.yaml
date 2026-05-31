@@ -1,0 +1,60 @@
+# ============================================================
+# tasks.yaml — Task 配置文件
+# 每个顶级 key 定义一个 Task，key 名 = crew.py 中 config 引用的名称
+# 模板变量 {topic}、{current_year} 由 main.py 的 inputs 字典自动替换
+# 任务按 crew.py 中 @task 方法的定义顺序串行执行
+# ============================================================
+
+research_task:
+  # ── 任务描述（Agent 读这个来决定怎么做）────────────
+  description: >
+    Conduct a thorough research about {topic}
+    Make sure you find any interesting and relevant information given
+    the current year is {current_year}.
+  # ── 预期输出（告诉 Agent 输出什么格式和内容）────────
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about {topic}
+  # ── 绑定的 Agent ──────────────────────────────────
+  agent: researcher
+
+reporting_task:
+  # ── 任务描述 ──────────────────────────────────────
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  # ── 预期输出 ──────────────────────────────────────
+  expected_output: >
+    A fully fledged report with the main topics, each with a full section of information.
+    Formatted as markdown without '```'
+  # ── 绑定的 Agent ──────────────────────────────────
+  agent: reporting_analyst
+
+# ============================================================
+# Task 完整可配置参数参考（注释形式，供扩展时查阅）
+# ============================================================
+
+  # ── 绑定与依赖 ────────────────────────────────────
+  # agent: researcher                   # 绑定执行此任务的 Agent（对应 agents.yaml 的 key）
+  # context:                            # 前置任务列表，其输出会作为本任务的输入上下文
+  #   - research_task                   #   引用其他 @task 方法名
+  #   - analysis_task                   #   可列出多个，所有前置任务的输出都会被传入
+
+  # ── 输出控制 ──────────────────────────────────────
+  # output_file: output/report.md       # 将任务输出保存到指定文件路径
+  # output_json:                        # JSON 格式输出 Schema（结构化输出）
+  #   type: object                      #   定义输出必须是 JSON 对象
+  #   properties:                       #   定义每个字段
+  #     title:                          #     字段名
+  #       type: string                  #     字段类型
+  #     content:
+  #       type: string
+
+  # ── 执行控制 ──────────────────────────────────────
+  # async_execution: false              # 是否异步执行（不等待结果直接继续下一个 Task）
+  # human_input: false                  # 执行前是否需要人类确认和审批
+  # tools: []                           # 本 Task 专属工具列表（通常用 Agent 级别的 tools）
+  # config: {}                          # 额外的运行时配置项
+
+  # ── 任务回调（高级） ──────────────────────────────
+  # callback: my_callback_function      # 任务完成后执行的回调函数
+  #   → 可用于：发通知、写日志、触发下一个流程
