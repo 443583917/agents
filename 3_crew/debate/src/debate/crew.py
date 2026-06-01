@@ -7,6 +7,7 @@ from crewai.project import CrewBase, agent, crew, task
 # 3.编排流程让agent按照流程执行任务
 # 4.流程是怎么执行的？是按任务执行的,每个任务会指定由哪个agent来执行，执行完了之后再执行下一个任务
 # 5.每个agent是怎么执行任务的？agent会根据任务的描述
+# 6.重要每个task的完成是一个设置好背景的agent根据任务要求的一次调用。
 @CrewBase
 class Debate():
     """Debate crew"""
