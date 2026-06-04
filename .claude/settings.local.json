@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(\"c:/Users/26056/Documents/GitHub/agents/agents/.venv/Scripts/python.exe\" \"c:/Users/26056/Documents/GitHub/agents/agents/1_foundations/me/3_lab3.py\")"
+      "Bash(\"c:/Users/26056/Documents/GitHub/agents/agents/.venv/Scripts/python.exe\" \"c:/Users/26056/Documents/GitHub/agents/agents/1_foundations/me/3_lab3.py\")",
+      "Bash(powershell -Command \"Get-Process -Id 32076 | Select-Object Id, ProcessName, Path\")"
     ]
   }
 }
