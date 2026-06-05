@@ -2,14 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "调试 3_lab3.py (Gradio)",
+            "name": "调试 4_lab4.py (Sidekick)",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/1_foundations/me/3_lab3.py",
+            "program": "${workspaceFolder}/4_langgraph/4_lab4.py",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}/1_foundations/me",
-            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/agent_env/Scripts/python.exe",
+            "env": {
+                "HTTP_PROXY": "",
+                "HTTPS_PROXY": ""
+            },
             "justMyCode": false
-        }
+        },
     ]
 }

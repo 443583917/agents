@@ -1,0 +1,17 @@
+456:                         f"* Running on local URL:  {self.protocol}://{self.server_name}:{self.server_port}, with SSR ⚡ (dev mode)"
+457:                     )
+458:                 else:
+459:                     s = "* Running on local URL:  {}://{}:{}"
+460:                     print(s.format(self.protocol, self.server_name, self.server_port))
+461: 
+462:             resp = httpx.get(
+463:                 f"{self.local_api_url}startup-events",
+464:                 verify=ssl_verify,
+465:                 timeout=None,
+466:             )
+467:             if not resp.is_success:
+468:                 raise Exception(
+469:                     f"Couldn't start the app because '{resp.url}' failed (code {resp.status_code}). Check your network or proxy settings to ensure localhost is accessible."
+470:                 )
+471: 
+472:         if share is None:
