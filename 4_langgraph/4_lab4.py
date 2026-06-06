@@ -323,24 +323,31 @@ def tool_logger(state: State) -> Dict[str, Any]:
     else:
         print(f"✅ 工具 [{tool_name}] 执行成功: {content}")
     return {}
-
+# 用 State 初始化 Graph Builder
 graph_builder = StateGraph(State)
-
+# 添加4个节点
 graph_builder.add_node("worker", worker)
 graph_builder.add_node("tools", ToolNode(tools=tools))
 graph_builder.add_node("tool_logger", tool_logger)
 graph_builder.add_node("evaluator", evaluator)
-
+# 添加边
+# worker → 条件路由（调工具 / 去评估）
+# 这里是流程  worker处理-路由处理-两种结果调用工具或者进行评估
+# 条件边使用add_conditional_edges
 graph_builder.add_conditional_edges(
     "worker", worker_router,
     {"tools": "tools", "evaluator": "evaluator"}
 )
+# 工具执行完后 → 回到 tool_logger 继续
 graph_builder.add_edge("tools", "tool_logger")
+# tool_logger执行完后 → 回到 worker 继续
 graph_builder.add_edge("tool_logger", "worker")
+# evaluator → 条件路由（重试 / 结束）
 graph_builder.add_conditional_edges(
     "evaluator", route_based_on_evaluation,
     {"worker": "worker", "END": END}
 )
+# 从 worker 开始
 graph_builder.add_edge(START, "worker")
 
 memory = MemorySaver()

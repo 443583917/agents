@@ -47,7 +47,7 @@ sales_agent3 = Agent(name="Busy Sales Agent", instructions=instructions3, model=
 # ============================================================
 @function_tool
 def send_html_email(subject: str, html_body: str):
-    # """ 发送带主题和 HTML 正文的邮件 """ 定义函数用途，
+    # """ 发送带主题和 HTML 正文的邮件 """ docstring 描述 
     # 大模型从这段文本理解这个函数是干什么的，以及如何使用它，
     # 不需要像之前定义一个函数描述json
     """ 发送带主题和 HTML 正文的邮件 """
