@@ -1,5 +1,13 @@
+"""
+util.py - UI 工具模块
+
+本文件包含 Gradio Web UI 使用的 CSS 样式、JavaScript 代码和颜色枚举。
+"""
+
 from enum import Enum
 
+
+# ========== CSS 样式 ==========
 css = """
 .positive-pnl {
     color: green !important;
@@ -29,10 +37,11 @@ footer{display:none !important}
 """
 
 
+# ========== JavaScript ==========
 js = """
 function refresh() {
     const url = new URL(window.location);
-
+    // 自动切换到深色主题
     if (url.searchParams.get('__theme') !== 'dark') {
         url.searchParams.set('__theme', 'dark');
         window.location.href = url.href;
@@ -40,7 +49,10 @@ function refresh() {
 }
 """
 
+
+# ========== 颜色枚举 ==========
 class Color(Enum):
+    """日志类型对应的颜色，用于在 UI 中区分不同类型的事件。"""
     RED = "#dd0000"
     GREEN = "#00dd00"
     YELLOW = "#dddd00"
